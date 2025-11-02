@@ -58,7 +58,7 @@ local MODES = {
     {n="Quantum",v="quantum",i="⊛",c=Color3.fromRGB(200,100,255)}
 }
 
-local function log(m) print("[WARPAH] "..m) end
+local function log(m) print("[LILYY] "..m) end
 local function getPos() return player.Character and player.Character:FindFirstChild("HumanoidRootPart") and player.Character.HumanoidRootPart.Position end
 local function getLook() return player.Character and player.Character:FindFirstChild("HumanoidRootPart") and player.Character.HumanoidRootPart.CFrame.LookVector or Vector3.new(0,0,-1) end
 
@@ -313,7 +313,7 @@ modes.wave = function()
         if pt and pt.Parent then
             local height = p.Y + 8 + math.sin(t + i * 0.5) * 5
             
-            force(pt, Vector3.new(
+            force(pt, Vector3.new(777
                 p.X + ((i % 10) * 3) - 15,
                 height,
                 p.Z + math.cos(t + i * 0.3) * 5
@@ -437,7 +437,7 @@ modes.quantum = modes.bring
 
 -- Create GUI (KOMPAK)
 local function createGUI()
-    local old = player.PlayerGui:FindFirstChild("WarpahGUI")
+    local old = player.PlayerGui:FindFirstChild("LilyyGUI")
     if old then old:Destroy() end
     
     local gui = Instance.new("ScreenGui")
@@ -503,7 +503,7 @@ local function createGUI()
     title.Size = UDim2.new(1,-120,0,18)
     title.Position = UDim2.new(0,48,0,7)
     title.BackgroundTransparency = 1
-    title.Text = "WARPAH CONTROLLER"
+    title.Text = "LILY CONTROLLER"
     title.TextColor3 = Color3.fromRGB(240,240,255)
     title.TextSize = 12
     title.Font = Enum.Font.GothamBold
@@ -1114,7 +1114,7 @@ end)
 
 -- Initialize
 log("═══════════════════════════════════")
-log("WARPAH CONTROLLER v4.0 COMPACT UI")
+log("LILY CONTROLLER v4.0 COMPACT UI")
 log("═══════════════════════════════════")
 log("✨ 24 Spectacular Modes")
 log("⚠ Ultimate Rope Destroyer (Reusable)")
